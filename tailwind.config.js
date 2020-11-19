@@ -1,13 +1,20 @@
+//Refer all available tailwind color palettes over here
+// https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
     future: {
-        removeDeprecatedGapUtilities: true,
-        purgeLayersByDefault: true,
     },
     purge: [
         './components/**/*.{js,ts,jsx,tsx}',
         './pages/**/*.{js,ts,jsx,tsx}',
     ],
-    theme: {},
+    theme: {
+      colors: {
+	...colors
+      }
+    },
     variants: {},
     plugins: [],
 }
