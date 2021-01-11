@@ -4,16 +4,15 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-    future: {
-    },
+    future: {},
     purge: [
-        './components/**/*.{js,ts,jsx,tsx}',
-        './pages/**/*.{js,ts,jsx,tsx}',
+        './src/components/**/*.{js,ts,jsx,tsx}',
+        './src/pages/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-      colors: {
-	...colors
-      }
+        colors: {
+            ...colors,
+        },
     },
     variants: {},
     plugins: [],
