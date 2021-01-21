@@ -13,6 +13,9 @@ module.exports = {
         colors: {
             ...colors,
         },
+        // fontFamily: {
+        //     inter: ['Inter'],
+        // },
     },
     variants: {},
     plugins: [],
