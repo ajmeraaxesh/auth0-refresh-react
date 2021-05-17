@@ -1,8 +1,12 @@
 @tailwind base;
-/* body {
-    @apply font-inter;
-} */
-
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+
+/*
+@layer base {
+  // Custom default styles like font name or default button UI's
+  // will go in here
+}
+*/
