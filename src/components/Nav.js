@@ -34,7 +34,15 @@ const Nav = () => {
         return null
     }
 
-    console.log('NAV: isAuthenticated and now returning null')
+    if (
+        typeof window !== 'undefined' &&
+        isAuthenticated &&
+        window.location.pathname === '/'
+    ) {
+        console.log('Calling router.push to dashboard')
+        router.push('/dashboard')
+    }
+
     return null
 }
 
