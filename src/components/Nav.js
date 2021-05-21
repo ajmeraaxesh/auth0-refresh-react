@@ -34,6 +34,8 @@ const Nav = () => {
         return null
     }
 
+    // Since its authenticated and path is to home page,
+    // we need to navigate to dashboard
     if (
         typeof window !== 'undefined' &&
         isAuthenticated &&

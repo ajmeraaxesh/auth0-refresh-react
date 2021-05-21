@@ -1,4 +1,5 @@
 module.exports = {
+    trailingSlash: true,
     //TODO:FIXME:  Use different Image provider / storage service like cloudinary and  akamai
     // images: {
     //     domains: ['images.unsplash.com', 'tailwindui.com'],
