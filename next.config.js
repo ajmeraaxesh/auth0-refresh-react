@@ -1,5 +1,16 @@
 module.exports = {
     trailingSlash: true,
+exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+	    return {
+     			 '/': { page: '/' },
+      			'/dashboard': { page: '/dashboard' },
+			'/dashboard/users': {page: '/dashboard/users'}
+    		}
+	},
+
     //TODO:FIXME:  Use different Image provider / storage service like cloudinary and  akamai
     // images: {
     //     domains: ['images.unsplash.com', 'tailwindui.com'],
