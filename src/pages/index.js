@@ -1,4 +1,7 @@
+import { useRouter } from 'next/router'
+
 export default function Home() {
-    console.log('Home Page Triggered:: ')
-    return <></>
+    const router = useRouter()
+    router.push('/dashboard')
+    return null
 }
